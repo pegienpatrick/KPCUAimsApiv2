@@ -17,7 +17,7 @@ public class ManagerDetailsService implements UserDetailsService {
     private FManagerRepository fManagerRepository;
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public ManagerUserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
         Optional<FManager> optionalFManager=fManagerRepository.findManagerByUsername(username);
         if(optionalFManager.isEmpty())

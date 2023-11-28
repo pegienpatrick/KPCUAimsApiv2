@@ -53,6 +53,6 @@ public class SwaggerAPIConfig {
         .contact(contact)
         .description("New KPCU AIMS API.This API exposes endpoints to upload data from local. it also facilitates applying of kpcu loans and their recovery");
 
-    return new OpenAPI().info(info).servers(List.of(devServer,localServer));
+    return new OpenAPI().info(info).servers(List.of(localServer));
   }
 }

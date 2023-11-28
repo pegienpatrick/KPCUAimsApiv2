@@ -24,6 +24,12 @@ public class ManageRoleController {
         return managerService.login(managerLoginRequest);
     }
 
+    @GetMapping("/hello")
+    public ResponseEntity<String> hello()
+    {
+        return ResponseEntity.ok("hello too");
+    }
+
 
 
 
